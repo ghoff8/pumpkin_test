@@ -1,0 +1,1 @@
+export const getAppClaims = state => state.app.claims;
