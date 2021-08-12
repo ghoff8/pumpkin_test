@@ -35,7 +35,7 @@ def upgrade():
     sa.PrimaryKeyConstraint('id')
     )
     op.add_column('claims', sa.Column('plan_id', src.models.fields.uuid.UUID(length=16), nullable=False))
-    op.create_foreign_key(None, 'claims', 'claims', ['plan_id'], ['id'])
+    op.create_foreign_key(None, 'claims', 'plans', ['plan_id'], ['id'])
     # ### end Alembic commands ###
 
 

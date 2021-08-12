@@ -20,7 +20,7 @@ class Claim(Base, DateTimeMixin, UUIDidMixin):
     claim_type = Column(Enum(ClaimTypeEnum), nullable=False)
 
     plan = relationship("Plan")
-    plan_id = Column(UUID(), ForeignKey('claims.id'), nullable=False)
+    plan_id = Column(UUID(), ForeignKey('plans.id'), nullable=False)
 
     line_items: List[ClaimLineItem] = relationship(
         "ClaimLineItem",
