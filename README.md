@@ -29,7 +29,7 @@ The backend will provide you with the components you need to get started, but wi
 
 ### **Setup**
 
-- To run the database and backend application, run `docker-compose up -d` from the `./backend/` directory.
+- To run the database and backend application, run `docker-compose up -d` from the `./` directory.
 - To run the front end application, run `yarn start`  from the `./front-end` directory.
 - To generate database schema updates and apply those updates on the database, run both
     - `./backend/devops/local/alembic-generate-revision.sh`
