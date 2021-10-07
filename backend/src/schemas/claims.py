@@ -12,7 +12,7 @@ class ClaimSchema(BaseModelSchema):
         ordered = True
         transient = True
         model = Claim
-        dump_only = ('claim_type', 'amount_claimed', 'line_items')
+        dump_only = ('claim_type', 'amount_claimed', 'line_items', 'id')
         fields = dump_only
 
     line_items = ma.fields.Nested(ClaimLineItemSchema, many=True)

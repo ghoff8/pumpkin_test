@@ -1,44 +1,26 @@
 import axios from 'axios';
 
 import { BASE_API } from "../constants";
-import { setAppClaims } from "../state";
+import { setAppClaims, setDecisionOptions, setPlans } from "../state";
 
-const HARD_CODED_DATA = {
-    type: 'prevent',
-    id: 12620,
-    amount_claimed: 800,
-    line_items: [
-        {
-            type: 'Vaccine',
-            quantity: 3,
-            amount_claimed: 200,
-        },
-        {
-            type: 'Wellness Exams',
-            quantity: 1,
-            amount_claimed: 200,
-        },
-        {
-            type: 'Blood Test',
-            quantity: 2,
-            amount_claimed: 200,
-        },
-        {
-            type: 'Fecal "Poop" Test',
-            quantity: 1,
-            amount_claimed: 200,
-        }
-    ]
-};
-
-export default function loadData() {
+function loadData() {
     return (dispatch) => {
-        return axios
-            .get(`${BASE_API}/claims`)
-            .then((data) => dispatch(setAppClaims(data)));
-            // .catch(() => {
-            //     dispatch(setAppClaims(some error?));
-            // });
-        // dispatch(setAppClaims(HARD_CODED_DATA));
+        const claimsRequest = axios.get(`${BASE_API}/claims`)
+        const optionsRequest = axios.get(`${BASE_API}/decision_options`)
+        return axios.all([claimsRequest, optionsRequest])
+            .then(axios.spread((...responses) => {
+                dispatch(setAppClaims(responses[0].data.body.data[0]))
+                dispatch(setDecisionOptions(responses[1].data.body.data))
+            }))
     }
 }
+
+function loadPlansData() {
+    return (dispatch) => {
+        return axios.get(`${BASE_API}/plans`).then(response => {
+            dispatch(setPlans(response.data.body.data))
+        })
+    }
+}
+
+export { loadData, loadPlansData }

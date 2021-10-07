@@ -8,6 +8,6 @@ DB_USER = 'pumpkin'
 DB_PASS = 'pumpkin'
 
 Engine = create_engine(f'mysql+pymysql://{DB_USER}:{DB_PASS}@{DB_SERVER}:{DB_PORT}/{DB_NAME}'
-                       f'?charset=utf8mb4&binary_prefix=true')
+                       f'?charset=utf8mb4&binary_prefix=true', pool_size=30, max_overflow=100)
 
 Session = scoped_session(sessionmaker(bind=Engine))

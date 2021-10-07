@@ -1,0 +1,23 @@
+2021-10-07 00:45:07,133 INFO werkzeug Thread-46 : 192.168.32.1 - - [07/Oct/2021 00:45:07] "[37mGET /decision_options HTTP/1.1[0m" 200 -
+2021-10-07 00:45:07,134 INFO werkzeug Thread-47 : 192.168.32.1 - - [07/Oct/2021 00:45:07] "[37mGET /claims HTTP/1.1[0m" 200 -
+2021-10-07 00:45:16,110 INFO werkzeug Thread-48 : 192.168.32.1 - - [07/Oct/2021 00:45:16] "[37mGET /plans HTTP/1.1[0m" 200 -
+2021-10-07 00:45:16,112 INFO werkzeug Thread-50 : 192.168.32.1 - - [07/Oct/2021 00:45:16] "[37mGET /decision_options HTTP/1.1[0m" 200 -
+2021-10-07 00:45:16,115 INFO werkzeug Thread-49 : 192.168.32.1 - - [07/Oct/2021 00:45:16] "[37mGET /claims HTTP/1.1[0m" 200 -
+2021-10-07 00:45:18,325 INFO werkzeug Thread-51 : 192.168.32.1 - - [07/Oct/2021 00:45:18] "[37mGET /decision_options HTTP/1.1[0m" 200 -
+2021-10-07 00:45:18,328 INFO werkzeug Thread-52 : 192.168.32.1 - - [07/Oct/2021 00:45:18] "[37mGET /claims HTTP/1.1[0m" 200 -
+2021-10-07 00:45:20,727 INFO werkzeug Thread-53 : 192.168.32.1 - - [07/Oct/2021 00:45:20] "[37mGET /claims HTTP/1.1[0m" 200 -
+2021-10-07 00:45:20,730 INFO werkzeug Thread-55 : 192.168.32.1 - - [07/Oct/2021 00:45:20] "[37mGET /decision_options HTTP/1.1[0m" 200 -
+2021-10-07 00:45:20,732 INFO werkzeug Thread-54 : 192.168.32.1 - - [07/Oct/2021 00:45:20] "[37mGET /plans HTTP/1.1[0m" 200 -
+2021-10-07 00:45:24,399 INFO werkzeug Thread-58 : 192.168.32.1 - - [07/Oct/2021 00:45:24] "[37mOPTIONS /decision_options/set HTTP/1.1[0m" 200 -
+2021-10-07 00:45:31,188 INFO werkzeug Thread-61 : 192.168.32.1 - - [07/Oct/2021 00:45:31] "[37mOPTIONS /decision_options/set HTTP/1.1[0m" 200 -
+2021-10-07 00:45:52,083 INFO werkzeug Thread-57 : 192.168.32.1 - - [07/Oct/2021 00:45:52] "[35m[1mGET /claims HTTP/1.1[0m" 500 -
+2021-10-07 00:45:52,084 INFO werkzeug Thread-56 : 192.168.32.1 - - [07/Oct/2021 00:45:52] "[35m[1mGET /decision_options HTTP/1.1[0m" 500 -
+2021-10-07 00:45:52,088 INFO werkzeug Thread-64 : 192.168.32.1 - - [07/Oct/2021 00:45:52] "[37mOPTIONS /decision_options/set HTTP/1.1[0m" 200 -
+2021-10-07 00:45:54,774 INFO werkzeug Thread-59 : 192.168.32.1 - - [07/Oct/2021 00:45:54] "[35m[1mPOST /decision_options/set HTTP/1.1[0m" 500 -
+2021-10-07 00:45:56,699 INFO werkzeug Thread-60 : 192.168.32.1 - - [07/Oct/2021 00:45:56] "[35m[1mGET /plans HTTP/1.1[0m" 500 -
+2021-10-07 00:46:01,434 INFO werkzeug Thread-62 : 192.168.32.1 - - [07/Oct/2021 00:46:01] "[35m[1mPOST /decision_options/set HTTP/1.1[0m" 500 -
+2021-10-07 00:46:03,025 INFO werkzeug Thread-63 : 192.168.32.1 - - [07/Oct/2021 00:46:03] "[35m[1mPOST /decision_options/set HTTP/1.1[0m" 500 -
+2021-10-07 00:48:40,389 INFO werkzeug MainThread :  * Running on http://0.0.0.0:8085/ (Press CTRL+C to quit)
+2021-10-07 00:48:40,395 INFO werkzeug MainThread :  * Restarting with stat
+2021-10-07 00:48:42,938 WARNING werkzeug MainThread :  * Debugger is active!
+2021-10-07 00:48:42,939 INFO werkzeug MainThread :  * Debugger PIN: 139-869-428

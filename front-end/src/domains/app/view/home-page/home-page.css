@@ -1,14 +1,66 @@
+
 .container {
     padding: 30px;
     font-family: Helvetica;
 }
 
-th, td {
+.table_container {
+    width: 60%;
+    min-width: 600px;
+}
+
+.home_page_th, .home_page_td {
     width: 300px;
     text-align: left;
     padding: 10px;
+    border: 1px solid grey;
 }
 
-th {
+.home_page_th {
     background: lightgray;
+}
+
+.home_page_info_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.home_page_claim_info {
+    width: 60%;
+    min-width: 600px;
+    display: flex;
+}
+
+.decision_cell {
+    margin: auto;
+    max-width: 200px;
+    border-bottom: 1px solid grey;;
+}
+
+@media only screen and (max-width: 600px) {
+    .home_page_th, .home_page_td {
+        text-align: left;
+        padding: 5px;
+        border: 1px solid grey;
+        font-size: 11px;
+    }
+
+    .home_page_claim_info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .table_container {
+        width: unset;
+        min-width: unset;
+    }
+
+    .home_page_info_container {
+        flex-direction: column;
+    }
+
+    .container {
+        padding: 5px 0;
+    }
+    
 }

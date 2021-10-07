@@ -14,8 +14,8 @@ class Claim(Base, DateTimeMixin, UUIDidMixin):
     __tablename__ = 'claims'
 
     class ClaimTypeEnum(enum.Enum):
-        prevent = 'prevent'
-        protect = 'protect'
+        prevent = 'Prevent'
+        protect = 'Protect'
 
     claim_type = Column(Enum(ClaimTypeEnum), nullable=False)
 
